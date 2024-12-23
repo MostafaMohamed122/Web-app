@@ -28,14 +28,14 @@ COPY FCDS /var/www/html/
 # Initialize MySQL (this will set up the root password and database)
 RUN service mysql start && \
     mysql -e "CREATE DATABASE IF NOT EXISTS fcds;" && \
-    mysql -e "CREATE USER 'root'@'%' IDENTIFIED BY 'rootpassword';" && \
-    mysql -e "GRANT ALL PRIVILEGES ON *.* TO 'root'@'%';" && \
+    mysql -e "CREATE USER 'root'@'%' IDENTIFIED BY 'Ahmedali123';" && \
+    mysql -e "GRANT ALL PRIVILEGES ON fcds.* TO 'root'@'%';" && \
     mysql -e "FLUSH PRIVILEGES;"
 
 # Run the fcds.sql file to set up the database schema and data
 COPY FCDS/fcds.sql /tmp/fcds.sql
 RUN service mysql start && \
-    mysql -u root -prootpassword fcds < /tmp/fcds.sql && \
+    mysql -u root -pAhmedali123 fcds < /tmp/fcds.sql && \
     rm /tmp/fcds.sql
 
 # Expose port 8080
