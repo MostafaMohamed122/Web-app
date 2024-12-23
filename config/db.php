@@ -2,7 +2,7 @@
 $host = 'localhost';
 $dbname = 'fcds';
 $username = 'root';
-$password = 'Ahmedali123';
+$password = '';
 
 // Create a PDO instance
 try {
