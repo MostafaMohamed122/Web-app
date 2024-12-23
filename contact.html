@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab Tech</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <style>
+        .navbar .btn-Sign_in {
+        padding: 0.5rem 1rem;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .navbar .btn-Sign_up {
+        padding: 0.5rem 1rem;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .team-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 150%;
+    justify-content: center;
+    text-align: center;
+    margin: 100px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+    }
+        </style>
+    </head>
+
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="image/logo.png" alt="Lab Tech Logo">
+                <span>Lab Tech</span>
+            </div>
+            <nav>
+                <a href="/FCDS/index.php">Home</a>
+                <a href="/FCDS/index.php#features">Features</a>
+                <a href="/FCDS/contact.html">Contact us</a>
+            </nav>
+            <div>
+                <button class="btn-Sign_up" onclick="window.location.href='signup.php';">Sign Up</button>
+                <button class="btn-Sign_in" onclick="window.location.href='login.php';">Sign In</button>
+            </div>
+        </div>
+    </header>
+
+        <div class="team-section">
+            <div class="info-container">
+                <h2 class="info-title" style="color:#007bff ;">Contact Information</h2><br>
+                <div class="info-card">
+                    <p><strong>Address:</strong> 123 Lab Street, San Jose, California, USA</p>
+                    <p><strong>Phone:</strong> +1 234 567 890</p>
+                    <p><strong>Email:</strong> contact@labtech.com</p>
+                    <p><strong>Location:</strong> Faculty Of Computers And Data Science Alexandria University </p>
+                    <div class="social-media">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
