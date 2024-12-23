@@ -1,0 +1,179 @@
+
+/* Main Container */
+.container1 {
+    display: flex;
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 13px 20px 25px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 40px auto;
+    background: linear-gradient(to right, #49426d, #38bdff);
+    color: white;
+    max-width: 1200px;
+
+}
+
+.welcome-section {
+    padding: 12% 3%;
+    margin: 5px;
+    color: white;
+    text-align: left;
+}
+
+.welcome-section h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+.signin-section {
+    background: white;
+    color: black;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+.signin-section h2 {
+    font-size: 2rem;
+    color: #1e90ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+}
+.input-group input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.input-group .icon1 {
+    position: absolute;
+    top: 50%; 
+    left: 10px;
+    transform: translateY(-50%);
+    width: 25px; 
+    height: 20px; 
+    background-image: url('/image/Vector4.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.input-group .icon2 {
+    position: absolute;
+    top: 50%; 
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px; 
+    height: 20px; 
+    background-image: url('/image/carbon_security.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.forgot-password {
+    display: block;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #1e90ff;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn2 {
+    margin-top: 4%;
+    width: 100%;
+    padding: 12px;
+    background: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn2:hover {
+    background: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.signup-text {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+.signup-text a {
+    color: #429ef9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .welcome-section, .signin-section {
+        border-radius: 0;
+        padding: 30px;
+    }
+
+    .welcome-section {
+        text-align: center;
+    }
+
+    .signin-section h2 {
+        font-size: 1.8rem;
+    }
+    
+}
+
+
